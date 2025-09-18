@@ -1,0 +1,201 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5f3ff; /* Azul suave, como el cielo */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/soft-gray-stripes.png');
+    background-repeat: repeat;
+}
+
+/* Encabezado principal */
+h1 {
+    font-size: 3.2em;
+    color: #1c3d58; /* Azul oscuro */
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #f5a623;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 1.8em;
+    color: #2b3e50;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Estilo para la imagen del logo */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navegación */
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: #1c3d58;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 20px;
+    padding: 12px 25px;
+    background-color: #f5a623; /* Naranja cálido como el sol */
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul a:hover {
+    background-color: #f1c40f; /* Amarillo brillante */
+    color: white;
+}
+
+/* Estilo de los elementos de la lista */
+li {
+    display: inline;
+}
+
+/* Sección principal */
+section {
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+section h1 {
+    font-size: 2.8em;
+    color: #1c3d58;
+}
+
+section h2 {
+    font-size: 1.7em;
+    color: #2b3e50;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Imagen principal dentro del contenido */
+section img {
+    margin-top: 30px;
+    border-radius: 10px;
+    max-width: 80%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover para las imágenes */
+section img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Decoración de aviones flotando por la página */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.fly {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.fly:nth-child(2) {
+    top: 20%;
+    left: 50%;
+    animation-duration: 4s;
+}
+
+.fly:nth-child(3) {
+    top: 25%;
+    right: 15%;
+    animation-duration: 5s;
+}
+
+/* Párrafos de la sección de contenido */
+p {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Añadir imágenes de aviones flotantes */
+.fly img {
+    width: 50px;
+    height: auto;
+}
+
+/* Animación para cuando la página es cargada */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    ul a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+}

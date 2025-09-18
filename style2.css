@@ -1,0 +1,133 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    font-size: 3em;
+    color: #2b3e50;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Estilo para el subtítulo */
+h2 {
+    font-size: 1.8em;
+    color: #3f4a59;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para la imagen del logo */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la lista de navegación */
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: #2b3e50;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 0 30px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul a:hover {
+    background-color: #5c9dff;
+    color: white;
+}
+
+/* Estilo para los elementos de lista */
+li {
+    display: inline;
+}
+
+/* Estilo para la sección de contenido */
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo de los párrafos */
+p {
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 20px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para la imagen dentro del contenido */
+section img {
+    margin-top: 30px;
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover para las imágenes */
+section img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Estilo para dispositivos pequeños */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+
+    ul a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    p {
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+    
+    section img {
+        max-width: 100%;
+    }
+}
